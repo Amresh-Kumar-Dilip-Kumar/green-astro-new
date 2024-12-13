@@ -1,0 +1,96 @@
+---
+import Button from "./ui/Button.astro";
+---
+
+<!-- <header
+  class="bg-gradient-to-b from-yellow-500 via-yellow-500/90 to-yellow-600 flex justify-between md:px-20 text-slate-700 items-stretch px-5"
+>
+ 
+  <div></div>
+  <nav
+    class="poppins-regular md:flex *:px-4 container mx-auto *:font-semibold h-full *:py-4 hidden"
+  >
+    <a
+      href="#"
+      class="hover:text-slate-100 hover:bg-gradient-to-b hover:from-yellow-600 hover:to-yellow-700"
+      >Home</a
+    >
+
+    <div class="relative group">
+      <a
+        href="#"
+        class="hover:text-slate-100 hover:bg-gradient-to-b hover:from-yellow-600 hover:to-yellow-700"
+        >About Us</a
+      >
+
+      <div
+        class="absolute hidden group-hover:flex flex-col bg-white rounded-lg shadow-lg mt-2 w-48 z-20"
+      >
+        <a
+          href="/about/store"
+          class="px-4 py-2 text-gray-800 hover:bg-yellow-300 transition rounded-t-lg"
+          >Our Store</a
+        >
+        <a
+          href="/about/business"
+          class="px-4 py-2 text-gray-800 hover:bg-yellow-300 transition"
+          >Our Business</a
+        >
+        <a
+          href="/about/mission-vision"
+          class="px-4 py-2 text-gray-800 hover:bg-yellow-300 transition"
+          >Mission and Vision</a
+        >
+        <a
+          href="/about/leadership"
+          class="px-4 py-2 text-gray-800 hover:bg-yellow-300 transition rounded-b-lg"
+          >Leadership</a
+        >
+      </div>
+    </div>
+
+    <a
+      href="#"
+      class="hover:text-slate-100 hover:bg-gradient-to-b hover:from-yellow-600 hover:to-yellow-700"
+      >Services</a
+    >
+    <a
+      href="#"
+      class="hover:text-slate-100 hover:bg-gradient-to-b hover:from-yellow-600 hover:to-yellow-700"
+      >Products</a
+    >
+    <a
+      href="#"
+      class="hover:text-slate-100 hover:bg-gradient-to-b hover:from-yellow-600 hover:to-yellow-700"
+      >Contact</a
+    >
+  </nav>
+
+
+  <div class="my-1 md:my-auto">
+    <Button> Inquire Today </Button>
+  </div>
+</header> -->
+<navbar
+  class="w-full h-24 bg-white flex justify-between items-center shadow-lg font-poppins font-semibold cursor-pointer fixed z-50"
+>
+  <div>
+    <img class="h-20" src="/public/greenlogo.png" alt="" />
+  </div>
+
+  <ul class="hidden md:flex space-x-6 text-lg">
+    <li class="hover:text-green-700"><a href="#" class="">Home</a></li>
+    <li class="hover:text-green-700"><a href="#" class="">About-us</a></li>
+    <li class="hover:text-green-700"><a href="#" class="">Business</a></li>
+    <li class="hover:text-green-700"><a href="#" class="">Products</a></li>
+    <li class="hover:text-green-700"><a href="#" class="">Contact-us</a></li>
+  </ul>
+
+  <div>
+    <Button> Inquire Today </Button>
+  </div>
+
+  <div class="md:hidden">
+    <a class="text-5xl" href=""> &#8801;</a>
+  </div>
+</navbar>

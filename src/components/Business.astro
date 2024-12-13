@@ -1,0 +1,94 @@
+---
+import Button from "./ui/Button.astro";
+---
+
+<section
+    class="relative business-section py-10 px-8 flex flex-col items-center bg-gradient-to-br from-[rgba(234,245,241,0.8)] to-[#eef7db]"
+>
+    <!-- <img
+        class="h-full w-full -z-0 absolute top-0 left-1/2 transform -translate-x-1/2"
+        src="/radial.svg"
+        alt=""
+    /> -->
+
+    <!-- Centered Heading -->
+    <div class="text-center text-3xl font-semibold mt-12">
+        <h2 class="hover:text-green-700">Let's Talk Business</h2>
+        <div class="w-24 h-2 bg-green-700 mx-auto mt-4 rounded-lg"></div>
+    </div>
+
+    <!-- Content Section with Two Columns -->
+    <div
+        class="max-w-6xl z-10 w-full grid md:grid-cols-2 gap-20 items-center my-14"
+    >
+        <!-- Left Column: Images -->
+        <div class="flex flex-col items-center md:items-center">
+            <div class="relative flex justify-center">
+                <img
+                    src="/image-3.png"
+                    alt="Chat Icon"
+                    class="w-80 h-80 mb-4"
+                />
+
+                <img
+                    src="/image-4.png"
+                    alt="Chat Icon"
+                    class="absolute w-44 h-44 -bottom-14 left-6"
+                />
+            </div>
+        </div>
+
+        <!-- Right Column: Form -->
+        <div class="bg-white rounded-lg shadow-lg p-8">
+            <form class="flex flex-col space-y-4">
+                <div>
+                    <label for="name" class="block text-gray-700 font-semibold"
+                        >Name</label
+                    >
+                    <input
+                        type="text"
+                        id="name"
+                        placeholder="Enter your name"
+                        class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+                    />
+                </div>
+                <div>
+                    <label
+                        for="surname"
+                        class="block text-gray-700 font-semibold">Surname</label
+                    >
+                    <input
+                        type="text"
+                        id="surname"
+                        placeholder="Enter your surname"
+                        class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+                    />
+                </div>
+                <div>
+                    <label for="email" class="block text-gray-700 font-semibold"
+                        >Email</label
+                    >
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="Enter your email"
+                        class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+                    />
+                </div>
+                <div>
+                    <label
+                        for="message"
+                        class="block text-gray-700 font-semibold">Message</label
+                    >
+                    <textarea
+                        id="message"
+                        rows="4"
+                        placeholder="Enter your message"
+                        class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+                    ></textarea>
+                </div>
+                <Button>Submit</Button>
+            </form>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,123 @@
+---
+import Logo from "./Logo.astro";
+import {
+  FaFacebook,
+  FaLinkedin,
+  FaSquareTwitter,
+  FaSquareInstagram,
+} from "react-icons/fa6";
+---
+
+<footer
+  class="bg-gradient-to-r from-[#1a521b] to-[#198548] text-white py-12 px-8"
+>
+  <div class="max-w-9xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-32">
+    <!-- Logo and Description -->
+    <div class="px-14">
+      <!-- <img src="/greenlogo.png" alt="Logo" class="w-26 h-16" /> -->
+      <Logo />
+      <p class="text-white poppins-regular p-5 max-w-[30vw]">
+        Committed to producing high-quality agricultural products with
+        sustainability and integrity. Join us in making a greener world.
+      </p>
+    </div>
+
+    <!-- Navigation Links -->
+    <div class="flex justify-evenly">
+      <div>
+        <h3 class="text-xl text-yellow-500 poppins-medium font-semibold mb-4">
+          Quick Links
+        </h3>
+        <ul class="poppins-regular space-y-2">
+          <li>
+            <a
+              href="/about"
+              class="hover:text-yellow-400 transition duration-200">About Us</a
+            >
+          </li>
+          <li>
+            <a
+              href="/products"
+              class="hover:text-yellow-400 transition duration-200"
+              >Our Products</a
+            >
+          </li>
+          <li>
+            <a
+              href="/services"
+              class="hover:text-yellow-400 transition duration-200">Services</a
+            >
+          </li>
+          <li>
+            <a
+              href="/contact"
+              class="hover:text-yellow-400 transition duration-200"
+              >Contact Us</a
+            >
+          </li>
+          <li>
+            <a href="/faq" class="hover:text-yellow-400 transition duration-200"
+              >FAQs</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <!-- Contact and Social Links -->
+      <div>
+        <h3 class="text-xl text-yellow-500 poppins-medium font-semibold mb-4">
+          Contact Us
+        </h3>
+        <ul class="poppins-regular space-y-2">
+          <li class="flex items-center">
+            <span class="mr-2">📍</span>
+            123 Green St, Farmville
+          </li>
+          <li class="flex items-center">
+            <span class="mr-2">📞</span>
+            +123-456-7890
+          </li>
+          <li class="flex items-center">
+            <span class="mr-2">✉️</span>
+            info@greencorp.com
+          </li>
+        </ul>
+        <!-- Social Media Icons -->
+        <div class="flex space-x-4 mt-6">
+          <a
+            href="#"
+            aria-label="Facebook"
+            class="text-white hover:text-yellow-400"
+          >
+            <FaFacebook className="w-8 h-8" />
+          </a>
+          <a
+            href="#"
+            aria-label="Twitter"
+            class="text-white hover:text-yellow-400"
+            ><FaSquareTwitter className="w-8 h-8" /></a
+          >
+          <a
+            href="#"
+            aria-label="Instagram"
+            class="text-white hover:text-yellow-400"
+            ><FaSquareInstagram className="w-8 h-8" /></a
+          >
+          <a
+            href="#"
+            aria-label="LinkedIn"
+            class="tewhite hover:text-yellow-400"
+            ><FaLinkedin className="w-8 h-8" /></a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Copyright Section -->
+  <div
+    class="border-t poppins-regular border-gray-700 mt-8 pt-4 text-center text-white"
+  >
+    &copy; {new Date().getFullYear()} Green Corp. All rights reserved.
+  </div>
+</footer>
